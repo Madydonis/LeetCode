@@ -1,0 +1,16 @@
+public class Solution {
+    
+ public int[] TwoSum(int[] nums, int target){//estructura del método
+    
+         for (int i = 0; i < nums.Length; i++) {
+            for (int j = i + 1; j < nums.Length; j++) {
+                if (nums[i] + nums[j] == target){ //verifica que la suma entre ellos = target
+            
+                    return new int[] { i, j }; //si encuentra la pareja, retorna valores
+                }
+            }
+        }
+        return null; //indica que no encontró ninguna
+    }
+}
+
